@@ -9,7 +9,7 @@ module.exports = {
 
       config.plugins.push(
         new NextFederationPlugin({
-          name: 'remote',
+          name: 'microfrontend',
           filename: 'static/chunks/remoteEntry.js',
           exposes: {
             './EditImage': './src/ui/EditImage/EditImage',
