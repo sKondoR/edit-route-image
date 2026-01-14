@@ -4,8 +4,8 @@ import './globals.css';
 
 export default function HomePage() {
   return (
-    <div>
-      <h1>Welcome to the Edit Route Image Microfrontend</h1>
+    <div className="">
+      <h1 className="text-pink-700">Welcome to the Edit Route Image Microfrontend</h1>
       <p>This is the home page of the shop app, running on its own.</p>
       <EditImage
         imgSrc=""
