@@ -31,7 +31,12 @@ module.exports = {
             '@fortawesome/react-fontawesome': { singleton: true, requiredVersion: false },
             '@fortawesome/free-solid-svg-icons': { singleton: true, requiredVersion: false },
           },
-          extraOptions: {},
+          // Add fallback handling
+          extraOptions: {
+            exposePages: true,
+            enableImageLoaderFix: true,
+            automaticAsyncBoundary: true,
+          }
         }),
       );
     }
