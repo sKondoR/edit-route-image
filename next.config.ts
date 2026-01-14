@@ -3,6 +3,16 @@ import type { Configuration } from 'webpack';
 import type { NextConfig } from 'next';
 
 module.exports = {
+  headers: async () => {
+    return [
+      {
+        source: '/_next/static/chunks/:path*',
+        headers: [
+          { key: 'Access-Control-Allow-Origin', value: '*' },
+        ],
+      },
+    ];
+  },
   webpack(config: Configuration, options: NextConfig) {
     if (!options.isServer) {
       config.plugins = config.plugins || [];
