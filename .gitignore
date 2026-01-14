@@ -6,6 +6,7 @@
 # production
 /build
 /dist
+.__mf__temp
 
 # env files (can opt-in for committing if needed)
 .env*
