@@ -19,15 +19,12 @@ export default defineConfig({
   ],
   build: {
     target: 'ES2022',
+    outDir: 'dist',
     minify: false,
     cssCodeSplit: false,
     rollupOptions: {
-      input: {
-        main: './index.html',
-      },
       preserveEntrySignatures: 'exports-only',
     },
-    modulePreload: false,
   },
   server: {
     port: 3001,
