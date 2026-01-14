@@ -21,10 +21,8 @@ module.exports = {
             '@fortawesome/react-fontawesome': { singleton: true, requiredVersion: false },
             '@fortawesome/free-solid-svg-icons': { singleton: true, requiredVersion: false },
           },
-          // extraOptions: {
-          //   exposePages: false,
-          //   useManifestFormat: true,
-          // },
+          getPublicPath: 'auto',
+          extraOptions: {},
         }),
       );
     }
