@@ -11,7 +11,7 @@ export default defineConfig({
     react(),
     federation({
       name: 'microfrontend',
-      filename: 'assets/remoteEntry.js',
+      filename: 'remoteEntry.js',
       exposes: {
         './EditImage': './src/ui/EditImage/EditImage.tsx',
       },
