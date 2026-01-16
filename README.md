@@ -9,4 +9,4 @@
 микрофронтенд [edit-route-image](https://github.com/sKondoR/edit-route-image) задеплоен на vercel [https://edit-route-image-mf.vercel.app/](https://edit-route-image-mf.vercel.app/)
 
 ## Стэк
-NextJS, React, TailwindCSS, nextjs-mf
+NextJS, React, TailwindCSS, nextjs-mf, Canvas
