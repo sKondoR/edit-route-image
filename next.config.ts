@@ -1,4 +1,4 @@
-const NextFederationPlugin = require('@module-federation/nextjs-mf');
+import NextFederationPlugin from '@module-federation/nextjs-mf';
 import type { Configuration } from 'webpack';
 import type { NextConfig } from 'next';
 
@@ -23,7 +23,6 @@ module.exports = {
           filename: 'static/chunks/remoteEntry.js',
           exposes: {
             './EditImage': './src/ui/EditImage',
-            './test': './src/pages/test',
           },
           shared: {
             react: {
@@ -43,7 +42,6 @@ module.exports = {
           extraOptions: {
             exposePages: true,
             enableImageLoaderFix: true,
-            automaticAsyncBoundary: true,
           }
         }),
       );
