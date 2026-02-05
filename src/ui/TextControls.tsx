@@ -55,7 +55,7 @@ export function TextControls({
         ].map(({ top, right, label }) => (
           <div
             key={label}
-            className={`w-[31px] h-[31px] cursor-pointer transition-colors ${
+            className={`w-1/2 h-1/2 cursor-pointer transition-colors ${
               position.isTop === top && position.isRight === right
                 ? 'bg-pink-700'
                 : 'hover:bg-cyan-700'
