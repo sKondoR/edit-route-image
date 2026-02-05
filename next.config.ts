@@ -51,21 +51,38 @@ module.exports = {
           shared: {
             react: {
               singleton: true,
-              requiredVersion: false,
+              requiredVersion: '19.2.4',
               eager: true,
             },
-            'react-dom': { 
+            'react-dom': {
               singleton: true,
-              requiredVersion: false,
+              requiredVersion: '19.2.4',
               eager: true,
             },
-            '@fortawesome/react-fontawesome': { singleton: true, requiredVersion: false },
-            '@fortawesome/free-solid-svg-icons': { singleton: true, requiredVersion: false },
+            '@fortawesome/react-fontawesome': {
+              singleton: true,
+              requiredVersion: '^3.1.1'
+            },
+            '@fortawesome/free-solid-svg-icons': {
+              singleton: true,
+              requiredVersion: '^7.1.0'
+            },
+            'react-is': {
+              singleton: true,
+              requiredVersion: '19.2.4',
+              eager: true,
+            },
+            'scheduler': {
+              singleton: true,
+              requiredVersion: '0.25.4',
+              eager: true,
+            },
           },
           // Add fallback handling
           extraOptions: {
-            exposePages: true,
+            exposePages: false,
             enableImageLoaderFix: true,
+            enableUrlLoaderFix: true,
           }
         }),
       );
